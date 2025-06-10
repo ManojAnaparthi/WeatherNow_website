@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="sheet.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌦️ WeatherNow</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+      <button id="locationBtn">📍 My Location</button>
+    </div>
+
+    <div id="loading" class="hidden">Loading...</div>
+
+    <div class="weather-container hidden" id="weatherContainer">
+      <h2 id="cityName">City, Country</h2>
+      <img id="weatherIcon" src="assets/default.png" alt="Weather Icon" />
+      <p id="description">Weather Description</p>
+      <h1 id="temperature">-- °C</h1>
+      <div class="details">
+        <p>💧 Humidity: <span id="humidity">--</span>%</p>
+        <p>🌬️ Wind: <span id="wind">--</span> m/s</p>
+        <p>📈 Pressure: <span id="pressure">--</span> hPa</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

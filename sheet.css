@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #f2f2f2;
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.search-box button {
+  padding: 10px 12px;
+  font-size: 1rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #2980b9;
+}
+
+#loading {
+  margin: 10px 0;
+  color: #888;
+}
+
+.weather-container {
+  margin-top: 20px;
+}
+
+.weather-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.details {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box input, .search-box button {
+    width: 100%;
+  }
+}
