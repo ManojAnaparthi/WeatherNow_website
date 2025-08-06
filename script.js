@@ -1,4 +1,4 @@
-const apiKey = '3a37db8665f0ac987666663357a23200'; // Replace with your OpenWeatherMap API key
+const apiKey ='Replace with your OpenWeatherMap API key';
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const cityInput = document.getElementById('cityInput');
